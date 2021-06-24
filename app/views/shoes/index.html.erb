@@ -1,0 +1,4 @@
+<h1>All Shoes</h1>
+<% @shoes.each do |shoe| %>
+<%= link_to shoe.name_and_color, shoe_path(shoe) %> - <%= number_to_currency(shoe.price) %></br>
+<% end %>
